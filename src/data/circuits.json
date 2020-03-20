@@ -1,22 +1,22 @@
 [
   {
     "id":1,
-    "title": "Circuit 1",
-    "subtitle": "Full Body Circuit"
+    "title": "Full Body Circuit 1",
+    "subtitle": "Cardio, Core, Arms & Legs"
   },
   {
     "id":2,
-    "title": "Circuit 2",
-    "subtitle": "Full Body Circuit"
+    "title": "Full Body Circuit 2",
+    "subtitle": "Cardio, Core, Arms & Legs"
   },
   {
     "id":3,
-    "title": "Circuit 3",
-    "subtitle": "Full Body Circuit"
+    "title": "Full Body Circuit 3",
+    "subtitle": "Cardio, Core, Arms & Legs"
   },
   {
     "id":4,
-    "title": "Circuit 4",
-    "subtitle": "Full Body Circuit"
+    "title": "Full Body Circuit 4",
+    "subtitle": "Cardio, Core, Arms & Legs"
   }
 ]

@@ -8,7 +8,7 @@ const LandingPage = () => {
   const programme: Circuits = DataService.circuits()
   return (
     <div>
-      <h1 className="text-center display-2 pt-5">Circuits</h1>
+      <h1 className="text-center display-3 pt-5">circuits</h1>
       <h2 className="text-center display-5 text-muted subtitle mb-5">
             At Home exercises for the indoors-y type or, you know, the end of the world
           </h2>
@@ -32,7 +32,7 @@ const LandingPage = () => {
                   >
                     {workout.title}
                   </h2>
-                  <h3 className="text-muted display-5 text-center">
+                  <h3 className="text-muted display-5 subtitle text-center">
                     {workout.subtitle}
                   </h3>
                 </NavLink>
