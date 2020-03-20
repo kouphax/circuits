@@ -36,7 +36,7 @@ const CircuitPage = (props: RouteComponentProps<{ id: string }>) => {
           circuit.circuit.map(c => {
             return (
               <>
-                <Col xs="6">
+                <Col md="12" lg="6">
                   <div className="border border-secondary rounded mt-2 mb-2 p-5">
                     <h2
                       className="display-5 text-center"
