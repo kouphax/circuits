@@ -1,6 +1,6 @@
 import { RouteComponentProps } from "react-router";
 import { DataService, CircuitWorkout } from "../DataService";
-import React, { useState } from "react";
+import React from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import BackButton from "./BackButton";
 import { LinkContainer } from "react-router-bootstrap";
@@ -17,7 +17,7 @@ const CircuitPage = (props: RouteComponentProps<{ id: string }>) => {
     <div>
       <BackButton />
       <Container>
-        <LinkContainer to={`/timer/${id}`}>
+        <LinkContainer to={`/circuits/timer/${id}`}>
           <Button block variant="outline-dark" className=" mt-5">
             <span style={{ fontSize: "2em" }}>TIMER</span>
           </Button>
