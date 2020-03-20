@@ -18,7 +18,7 @@ const CircuitPage = (props: RouteComponentProps<{ id: string }>) => {
     <div>
       <BackButton />
       <Container>
-        <LinkContainer to={`/circuits/timer/${id}`}>
+        <LinkContainer to={`/timer/${id}`}>
           <Button block variant="outline-dark" className=" mt-5">
             <span style={{ fontSize: "2em" }}>TIMER</span>
           </Button>

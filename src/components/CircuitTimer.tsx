@@ -135,7 +135,7 @@ const CircuitTimer = (props: RouteComponentProps<{ id: string }>) => {
     <>
       <Row className="pl-3 pr-3">
         <Col xs="6" md="12">
-          <LinkContainer to={`/circuits/circuit/${id}`}>
+          <LinkContainer to={`/circuit/${id}`}>
             <Button block variant="dark" className=" mt-5">
               <span style={{ fontSize: "2em" }}>BACK</span>
             </Button>

@@ -10,9 +10,9 @@ const App = () => (
     <div className="container">
       <Router>
         <ScrollToTop />
-        <Route exact path="/circuits/" component={LandingPage} />
-        <Route exact path="/circuits/circuit/:id" component={CircuitPage} />
-        <Route exact path="/circuits/timer/:id" component={CircuitTimer} />
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/circuit/:id" component={CircuitPage} />
+        <Route exact path="/timer/:id" component={CircuitTimer} />
       </Router>
     </div>
   </div>

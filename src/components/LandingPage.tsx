@@ -20,7 +20,7 @@ const LandingPage = () => {
               >
                 <NavLink
                   exact
-                  to={`/circuits/circuit/${workout.id}`}
+                  to={`/circuit/${workout.id}`}
                   style={{ textDecoration: "none" }}
                 >
                   <h2
