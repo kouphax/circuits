@@ -1,0 +1,43 @@
+{
+    "id": 1,
+    "title": "Circuit 1",
+    "subtitle": "Full Body Circuit", 
+    "rests": {
+        "exercise": 20,
+        "circuit": 90
+    },
+    "circuits": 5,
+    "circuit": [{
+        "id": 1,
+        "eid": "jumping-jacks",
+        "duration": 30
+    }, {
+        "id": 2,
+        "eid": "body-weight-squat",
+        "duration": 30
+    }, {
+        "id": 3,
+        "eid": "crunch",
+        "duration": 30
+    }, {
+        "id": 4,
+        "eid": "mountain-climber",
+        "duration": 30
+    }, {
+        "id": 5,
+        "eid": "simulated-pull-up",
+        "duration": 30
+    }, {
+        "id": 6,
+        "eid": "high-knee",
+        "duration": 30
+    }, {
+        "id": 7,
+        "eid": "in-and-out-push-up",
+        "duration": 30
+    }, {
+        "id": 8,
+        "eid": "plank",
+        "duration": 30
+    }]
+}

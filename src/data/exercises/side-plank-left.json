@@ -1,7 +1,7 @@
 {
-  "id": "side-plank",
+  "id": "side-plank-left",
   "sid": 76,
-  "name": "Side Plank",
+  "name": "Side Plank (Left)",
   "target": "Abs",
   "image": "/images/workouts/holder.svg"
 }

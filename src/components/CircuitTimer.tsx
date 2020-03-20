@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Button, Row, Col, ProgressBar } from "react-bootstrap";
 import { RouteComponentProps } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
+import { set } from "local-storage";
 
 type Plan = { name: string, duration: number}[][]
 
@@ -77,6 +78,7 @@ const CircuitTimer = (props: RouteComponentProps<{ id: string }>) => {
                 currentCircuit = state.currentCircuit
                 time = 0
                 currentPlanTime = 0
+                set<boolean>(`@circuit/${circuit.id}`, true)
             } else if(exerciseComplete && circuitComplete) {
                 currentExercise = 0
                 currentCircuit = state.currentCircuit + 1

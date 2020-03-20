@@ -1,7 +1,22 @@
 [
   {
-    "id": 5,
+    "id":1,
     "title": "Circuit 1",
+    "subtitle": "Full Body Circuit"
+  },
+  {
+    "id":2,
+    "title": "Circuit 2",
+    "subtitle": "Full Body Circuit"
+  },
+  {
+    "id":3,
+    "title": "Circuit 3",
+    "subtitle": "Full Body Circuit"
+  },
+  {
+    "id":4,
+    "title": "Circuit 4",
     "subtitle": "Full Body Circuit"
   }
 ]

@@ -1,0 +1,43 @@
+{
+    "id": 2,
+    "title": "Circuit 2",
+    "subtitle": "Full Body Circuit", 
+    "rests": {
+        "exercise": 20,
+        "circuit": 90
+    },
+    "circuits": 5,
+    "circuit": [{
+        "id": 1,
+        "eid": "run-in-place",
+        "duration": 30
+    }, {
+        "id": 2,
+        "eid": "alternating-lunge",
+        "duration": 30
+    }, {
+        "id": 3,
+        "eid": "starfish-crunch",
+        "duration": 30
+    }, {
+        "id": 4,
+        "eid": "towel-snatch",
+        "duration": 30
+    }, {
+        "id": 5,
+        "eid": "push-up",
+        "duration": 30
+    }, {
+        "id": 6,
+        "eid": "high-knee",
+        "duration": 30
+    }, {
+        "id": 7,
+        "eid": "burpee",
+        "duration": 30
+    }, {
+        "id": 8,
+        "eid": "bicycle",
+        "duration": 30
+    }]
+}

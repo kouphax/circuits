@@ -8,9 +8,12 @@ const LandingPage = () => {
   const programme: Circuits = DataService.circuits()
   return (
     <div>
-      <h1 className="text-center display-2 pt-5 mb-5">Circuits</h1>
+      <h1 className="text-center display-2 pt-5">Circuits</h1>
+      <h2 className="text-center display-5 text-muted subtitle mb-5">
+            At Home exercises for the indoors-y type or, you know, the end of the world
+          </h2>
       {programme.circuits.map(workout => {
-        const hasRecord = get(`/workout/${workout.id}`) !== null;
+        const hasRecord = !!get(`@circuit/${workout.id}`);
         return (
           <Row>
             <Col>

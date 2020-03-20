@@ -1,8 +1,7 @@
 {
-    "id": 1,
-    "title": "Circuit 1",
+    "id": 3,
+    "title": "Circuit 3",
     "subtitle": "Full Body Circuit", 
-    "type": "circuit",
     "rests": {
         "exercise": 20,
         "circuit": 90
@@ -10,23 +9,23 @@
     "circuits": 5,
     "circuit": [{
         "id": 1,
-        "eid": "jumping-jacks",
+        "eid": "jump",
         "duration": 30
     }, {
         "id": 2,
-        "eid": "body-weight-squat",
+        "eid": "simulated-pull-up",
         "duration": 30
     }, {
         "id": 3,
-        "eid": "crunch",
+        "eid": "prayer",
         "duration": 30
     }, {
         "id": 4,
-        "eid": "mountain-climber",
+        "eid": "side-plank-left",
         "duration": 30
     }, {
         "id": 5,
-        "eid": "simulated-pull-up",
+        "eid": "crunch",
         "duration": 30
     }, {
         "id": 6,
@@ -34,11 +33,11 @@
         "duration": 30
     }, {
         "id": 7,
-        "eid": "in-and-out-push-up",
+        "eid": "body-weight-squat",
         "duration": 30
     }, {
         "id": 8,
-        "eid": "plank",
+        "eid": "side-plank-right",
         "duration": 30
     }]
 }
