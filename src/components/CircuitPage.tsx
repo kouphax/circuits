@@ -13,6 +13,7 @@ const CircuitPage = (props: RouteComponentProps<{ id: string }>) => {
     }
   } = props;
   const circuit: CircuitWorkout = DataService.circuit(parseInt(id));
+  const totalTime: number = (circuit.circuit.reduce((p,c) => p + c.duration, 0) + circuit.rests.exercise * (circuit.circuit.length - 1)) * circuit.circuits + circuit.rests.circuit * (circuit.circuits - 1)
   return (
     <div>
       <BackButton />
@@ -26,9 +27,10 @@ const CircuitPage = (props: RouteComponentProps<{ id: string }>) => {
       <Row>
         <Col>
           <h1 className="text-center display-3 pt-5">{circuit.title}</h1>
-          <h2 className="text-center display-4 text-muted subtitle pb-5">
+          <h2 className="text-center display-4 text-muted subtitle ">
             {circuit.subtitle}
           </h2>
+          <h3 className="text-center display-5 subtitle pb-5">{circuit.circuit.length} Exercises / {circuit.circuits} Circuits / { Math.floor(totalTime / 60) }<small>m</small> { totalTime - Math.floor(totalTime / 60) * 60 }<small>s</small> </h3>
         </Col>
       </Row>
       <Row className="pb-5 mb-5">
