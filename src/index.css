@@ -1,0 +1,11 @@
+body, div, label, .subtitle {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+h1, h2, h3, .heading {
+  font-family: 'Anton', sans-serif;
+}
+
+.optional-set {
+  opacity: 0.6;
+}

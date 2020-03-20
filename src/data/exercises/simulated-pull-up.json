@@ -1,0 +1,7 @@
+{
+  "id": "simulated-pull-up",
+  "sid": 10,
+  "name": "Simulated Pull Up",
+  "target": "Back",
+  "image": "/images/workouts/holder.svg"
+}

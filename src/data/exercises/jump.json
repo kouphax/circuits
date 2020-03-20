@@ -1,0 +1,7 @@
+{
+  "id": "jump",
+  "sid": 64,
+  "name": "Jump",
+  "target": "Legs",
+  "image": "/images/workouts/holder.svg"
+}
