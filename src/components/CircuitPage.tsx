@@ -47,16 +47,7 @@ const CircuitPage = (props: RouteComponentProps<{ id: string }>) => {
           return (
             <>
               <Col md="12" lg="6">
-                <LinkContainer
-                  className="float-left"
-                  to={`/exercise/${c.exercise.id}`}
-                >
-                  <FaQuestion
-                    color="#ddd"
-                    size="28"
-                    className="ml-2 mt-4"
-                  />
-                </LinkContainer>
+
                 <div className="border border-secondary rounded mt-2 mb-2 p-5">
                   <h2
                     className="display-5 text-center"
@@ -67,6 +58,15 @@ const CircuitPage = (props: RouteComponentProps<{ id: string }>) => {
                   <h3 className="text-muted display-5 text-center">
                     {c.duration} seconds
                   </h3>
+                  <LinkContainer
+                  className="float-right" style={{marginRight: "-30px"}} 
+                  to={`/exercise/${c.exercise.id}`}
+                >
+                  <FaQuestion
+                    color="#ddd"
+                    size="28"
+                  />
+                </LinkContainer>
                 </div>
               </Col>
             </>
