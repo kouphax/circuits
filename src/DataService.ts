@@ -12,7 +12,7 @@ export type Exercise = {
   id: ExerciseId;
   name: string;
   target: string;
-  image: string;
+  vid: string;
 };
 
 export type ExerciseId = string;
@@ -50,10 +50,6 @@ export type CircuitWorkoutDefinition = CircuitSynopsis & {
   circuits: number;
 };
 
-export type Instructions = {
-  exercise: Exercise
-}
-
 export class DataService {
   static circuits(): Circuits {
     const circuits: CircuitSynopsis[] = require("./data/circuits.json");
@@ -81,10 +77,8 @@ export class DataService {
     }
   }
 
-  static instructions(id: string): Instructions {
+  static exercise(id: string): Exercise {
     const exercise: Exercise = require(`./data/exercises/${id}.json`);
-    return {
-      exercise
-    }
+    return exercise;
   }
 }

@@ -5,6 +5,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { set } from "local-storage";
 import ReactGA from "react-ga";
 import { history } from "../App";
+import { LinkContainer } from "react-router-bootstrap";
 
 type Plan = { name: string; duration: number }[][];
 
@@ -189,14 +190,11 @@ const CircuitTimer = (props: RouteComponentProps<{ id: string }>) => {
     <>
       <Row className="pl-3 pr-3">
         <Col xs="6" md="12">
-          <Button
-            block
-            variant="dark"
-            className=" mt-5"
-            onClick={history.goBack}
-          >
-            <span style={{ fontSize: "2em" }}>BACK</span>
-          </Button>
+          <LinkContainer to={`/circuit/${id}`}>
+            <Button block variant="dark" className=" mt-5">
+              <span style={{ fontSize: "2em" }}>BACK</span>
+            </Button>
+          </LinkContainer>
         </Col>
         <Col xs="6" md="12">
           <Button

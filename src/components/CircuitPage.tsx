@@ -20,7 +20,7 @@ const CircuitPage = (props: RouteComponentProps<{ id: string }>) => {
     circuit.rests.circuit * (circuit.circuits - 1);
   return (
     <div>
-      <BackButton />
+      <BackButton to="/" />
       <Container>
         <LinkContainer to={`/timer/${id}`}>
           <Button block variant="outline-dark" className=" mt-5">

@@ -1,13 +1,13 @@
 import React from "react";
-import { Router, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from "./components/ScrollToTop";
 import LandingPage from "./components/LandingPage";
 import CircuitPage from "./components/CircuitPage";
 import CircuitTimer from "./components/CircuitTimer";
 import { createBrowserHistory } from 'history';
 import ReactGA from "react-ga";
-import Exercise from "./components/Exercise";
-import { FaGithub } from "react-icons/fa";
+import ExerciseInstructions from "./components/ExerciseInstructions";
+import FourOhFour from "./components/FourOhFour";
 
 export const history = createBrowserHistory();
 
@@ -21,10 +21,13 @@ const App = () => (
     <div className="container">
       <Router history={history}>
         <ScrollToTop />
+        <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/circuit/:id" component={CircuitPage} />
         <Route exact path="/timer/:id" component={CircuitTimer} />
-        <Route exact path="/exercise/:id" component={Exercise} />
+        <Route exact path="/exercise/:id" component={ExerciseInstructions} />
+        <Route component={FourOhFour} />
+        </Switch>
       </Router>
       <h5 className="text-center mt-5 mb-5 text-muted display-5 subtitle ">BY <a href="https://yobriefca.se">YO BRIEFCASE</a>&nbsp;&nbsp;|&nbsp;&nbsp;WANT TO HELP? <a href="mailto:james@yobriefca.se?subject=Circuits Help">EMAIL US</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/kouphax/circuits">CODE ON GITHUB</a></h5>
     </div>
