@@ -2,8 +2,9 @@ import {Circuit, CircuitWorkout, DataService} from "../DataService";
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, ProgressBar } from "react-bootstrap";
 import { RouteComponentProps } from "react-router-dom";
-import { LinkContainer } from "react-router-bootstrap";
 import { set } from "local-storage";
+import ReactGA from "react-ga";
+import { history } from '../App'
 
 type Plan = { name: string, duration: number}[][]
 
@@ -79,6 +80,11 @@ const CircuitTimer = (props: RouteComponentProps<{ id: string }>) => {
                 time = 0
                 currentPlanTime = 0
                 set<boolean>(`@circuit/${circuit.id}`, true)
+                ReactGA.event({
+                  category: "interactions",
+                  action: "circuit.completed",
+                  value: circuit.id
+                });
             } else if(exerciseComplete && circuitComplete) {
                 currentExercise = 0
                 currentCircuit = state.currentCircuit + 1
@@ -137,11 +143,9 @@ const CircuitTimer = (props: RouteComponentProps<{ id: string }>) => {
     <>
       <Row className="pl-3 pr-3">
         <Col xs="6" md="12">
-          <LinkContainer to={`/circuit/${id}`}>
-            <Button block variant="dark" className=" mt-5">
+            <Button block variant="dark" className=" mt-5" onClick={ history.goBack }>
               <span style={{ fontSize: "2em" }}>BACK</span>
             </Button>
-          </LinkContainer>
         </Col>
         <Col xs="6" md="12">
           <Button block variant="outline-dark" className="mb-5 mt-5" onClick={ () => toggleTimer() }>
