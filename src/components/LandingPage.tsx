@@ -5,13 +5,14 @@ import { Row, Col } from "react-bootstrap";
 import { Circuits, DataService } from "../DataService";
 
 const LandingPage = () => {
-  const programme: Circuits = DataService.circuits()
+  const programme: Circuits = DataService.circuits();
   return (
     <div>
       <h1 className="text-center display-3 pt-5">circuits</h1>
       <h2 className="text-center display-5 text-muted subtitle mb-5">
-            At Home exercises for the indoors-y type or, you know, the end of the world
-          </h2>
+        At Home exercises for the indoors-y type or, you know, the end of the
+        world
+      </h2>
       {programme.circuits.map(workout => {
         const hasRecord = !!get(`@circuit/${workout.id}`);
         return (
