@@ -26,7 +26,7 @@ const App = () => (
         <Route exact path="/timer/:id" component={CircuitTimer} />
         <Route exact path="/exercise/:id" component={Exercise} />
       </Router>
-      <h5 className="text-center mt-5 mb-5 text-muted display-5 subtitle ">BY <a href="https://yobriefca.se">YO BRIEFCASE</a>&nbsp;&nbsp;|&nbsp;&nbsp;WANT TO HELP? <a href="/help">EMAIL US</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/kouphax/circuits">CODE ON GITHUB</a></h5>
+      <h5 className="text-center mt-5 mb-5 text-muted display-5 subtitle ">BY <a href="https://yobriefca.se">YO BRIEFCASE</a>&nbsp;&nbsp;|&nbsp;&nbsp;WANT TO HELP? <a href="mailto:james@yobriefca.se?subject=Circuits Help">EMAIL US</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/kouphax/circuits">CODE ON GITHUB</a></h5>
     </div>
   </div>
 );
