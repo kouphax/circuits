@@ -1,8 +1,7 @@
 import React from "react";
-import BackButton from "./BackButton";
 import { RouteComponentProps } from "react-router";
 import { DataService, Exercise } from "../DataService";
-import YouTube from "react-youtube";
+import YouTube from "react-youtube-embed";
 import { Container, Button } from "react-bootstrap";
 import { history } from "../App";
 
@@ -30,8 +29,7 @@ const ExerciseInstructions = (props: RouteComponentProps<{ id: string }>) => {
       <div className="text-center">
         {exercise.vid ? (
           <YouTube
-            videoId={exercise.vid}
-            className="border border-dark rounded"
+            id={exercise.vid}
           />
         ) : (
           <h2 className="text-center display-5 text-muted subtitle mb-5">
