@@ -1,0 +1,35 @@
+{
+    "id": 5,
+    "title": "Abs Challenge Level 1",
+    "subtitle": "Week 1 by Pulse Lough Moss", 
+    "rests": {
+        "exercise": 20,
+        "circuit": 60
+    },
+    "circuits": 3,
+    "circuit": [{
+        "id": 1,
+        "eid": "crunch",
+        "duration": 30
+    }, {
+        "id": 2,
+        "eid": "leg-raises",
+        "duration": 30
+    }, {
+        "id": 3,
+        "eid": "plank",
+        "duration": 30
+    }, {
+        "id": 4,
+        "eid": "russian-twist",
+        "duration": 30
+    }, {
+        "id": 5,
+        "eid": "side-plank-left",
+        "duration": 30
+    }, {
+        "id": 6,
+        "eid": "mountain-climber",
+        "duration": 30
+    }]
+}

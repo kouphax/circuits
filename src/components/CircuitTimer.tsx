@@ -4,7 +4,6 @@ import { Button, Row, Col, ProgressBar } from "react-bootstrap";
 import { RouteComponentProps } from "react-router-dom";
 import { set } from "local-storage";
 import ReactGA from "react-ga";
-import { history } from "../App";
 import { LinkContainer } from "react-router-bootstrap";
 
 type Plan = { name: string; duration: number }[][];
