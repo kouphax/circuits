@@ -1,0 +1,35 @@
+{
+    "id": 8,
+    "title": "TRX Upper Body Workout",
+    "subtitle": "Requires TRX Bands", 
+    "rests": {
+        "exercise": 30,
+        "circuit": 90
+    },
+    "circuits": 4,
+    "circuit": [{
+        "id": 1,
+        "eid": "trx-bicep-curl",
+        "duration": 30
+    }, {
+        "id": 2,
+        "eid": "trx-squat",
+        "duration": 30
+    }, {
+        "id": 3,
+        "eid": "trx-tricep-extension",
+        "duration": 30
+    }, {
+        "id": 4,
+        "eid": "trx-deltoid-fly",
+        "duration": 30
+    }, {
+        "id": 5,
+        "eid": "trx-power-pull",
+        "duration": 30
+    }, {
+        "id": 6,
+        "eid": "trx-rows",
+        "duration": 30
+    }]
+}
