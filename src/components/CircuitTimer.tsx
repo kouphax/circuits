@@ -19,6 +19,7 @@ type CircuitTimerState = {
   currentPlanTime: number;
   totalPlanTime: number;
   initing: boolean;
+  nextExerciseName: string;
 };
 
 const beep = () =>
@@ -74,7 +75,8 @@ const CircuitTimer = (props: RouteComponentProps<{ id: string }>) => {
     currentCircuit: 0,
     currentExercise: 0,
     complete: false,
-    initing: false
+    initing: false,
+    nextExerciseName: plan[0][1].name
   });
 
   useEffect(() => {
@@ -120,13 +122,19 @@ const CircuitTimer = (props: RouteComponentProps<{ id: string }>) => {
           currentPlanTime = state.currentPlanTime - 1;
         }
 
+        let nextExerciseName = ""
+        if(!planComplete) {
+          nextExerciseName = plan.flat()[(currentCircuit * plan[0].length) + currentExercise + 1].name
+        }
+
         setState(
           Object.assign({}, state, {
             time: time,
             currentCircuit,
             currentExercise,
             complete: planComplete,
-            currentPlanTime
+            currentPlanTime,
+            nextExerciseName
           })
         );
       }
@@ -243,6 +251,7 @@ const CircuitTimer = (props: RouteComponentProps<{ id: string }>) => {
           <h1 className="text-center display-3 pt-5">
             {state.plan[state.currentCircuit][state.currentExercise].name}
           </h1>
+          <h2 className="text-center subtitle text-muted">Next: { state.nextExerciseName }</h2>
           <h2 className="text-center display-1 text-muted subtitle">
             {state.time}
           </h2>

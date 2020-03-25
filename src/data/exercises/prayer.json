@@ -2,6 +2,5 @@
   "id": "prayer",
   "sid": 48,
   "name": "Prayer",
-  "target": "Biceps",
-  "image": "/images/workouts/holder.svg"
+  "target": "Biceps"
 }
