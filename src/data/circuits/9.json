@@ -1,0 +1,31 @@
+{
+    "id": 9,
+    "title": "Press-up Matrix",
+    "subtitle": "https://www.menshealth.com/uk/fitness/a32249303/tom-hardy-workout/",
+    "rests": {
+        "exercise": 30,
+        "circuit": 90
+    },
+    "circuits": 4,
+    "circuit": [{
+        "id": 1,
+        "eid": "square-push-up",
+        "duration": 30
+    }, {
+        "id": 2,
+        "eid": "rectangle-push-up",
+        "duration": 30
+    }, {
+        "id": 3,
+        "eid": "eagle-push-up",
+        "duration": 30
+    }, {
+        "id": 4,
+        "eid": "kong-push-up",
+        "duration": 30
+    }, {
+        "id": 5,
+        "eid": "diamond-push-up",
+        "duration": 30
+    }]
+}
